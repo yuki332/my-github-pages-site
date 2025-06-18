@@ -1,0 +1,16 @@
+{
+    "name": "e2e",
+    "type": "module",
+    "scripts": {
+      "test": "NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest",
+      "test:converterpage": "npm run test -- converter.test.js",
+      "test:tab": "npm run test -- converter.test.js --testNamePattern='Tab switching check'",
+      "test:conversion": "npm run test -- converter.test.js --testNamePattern='Conversion functionality check'"
+    },
+    "devDependencies": {
+      "jest": "^29.7.0",
+      "jest-dev-server": "^11.0.0",
+      "jest-puppeteer": "^11.0.0",
+      "puppeteer": "^24.7.1"
+    }
+  }
